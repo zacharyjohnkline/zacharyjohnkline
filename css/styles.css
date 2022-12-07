@@ -1,0 +1,337 @@
+@font-face {
+  font-family: "caveat";
+  src: url(../fonts/Caveat-Medium.ttf);
+}
+@font-face {
+  font-family: "abril";
+  src: url(../fonts/AbrilFatface-Regular.ttf);
+}
+@font-face {
+  font-family: "charter";
+  src: url(../fonts/Charter.ttc);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vw;
+}
+.page-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: blue; */
+}
+.header {
+  height: 100%;
+  width: 100%;
+  min-height: 90px;
+  max-height: 200px;
+  background-image: linear-gradient(to left, #e7178920, #ffffff00);
+  display: flex;
+  align-items: center;
+}
+.Logo {
+  background-color: black;
+  height: 100%;
+  width: 20%;
+  min-width: 90px;
+  min-height: 90px;
+  max-width: 150px;
+  max-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Logo {
+  text-decoration: none;
+  font-family: "caveat";
+  font-size: calc((50px + 20 * (100vw - 320px) / 1600));
+  color: white;
+}
+.hello-container {
+  width: 100%;
+  height: 100%;
+  min-height: 90px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-right: 3%;
+  /* background-color: brown; */
+}
+.body-container {
+  position: relative;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+#hello {
+  text-decoration: none;
+  color: black;
+  font-family: "caveat";
+  font-size: calc((23px + 50 * ((100vw - 320px) / 1600)));
+}
+.tagline {
+  position: relative;
+  z-index: 8;
+  margin-left: 50%;
+  margin-top: 3%;
+  align-self: center;
+  transform: translateX(-50%);
+  text-decoration: none;
+  width: 80%;
+  text-align: center;
+  color: white;
+  font-family: "abril";
+  font-size: calc((20px + 60 * ((100vw - 320px) / 1600)));
+}
+#change-words {
+  color: #e8ae30;
+}
+.profile-pic {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-height: 600px;
+  overflow: hidden;
+  background-color: #e71789;
+}
+.tagline-area {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.down-arrow-container {
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  z-index: 5;
+  top: 0;
+  right: 0;
+}
+.Down-Arrow {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 300px;
+  /* background-color: brown; */
+}
+.Squares {
+  position: relative;
+  z-index: 6;
+  margin-bottom: -10%;
+  /* background-color: blue; */
+}
+.Tinted-Magenta {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 115%;
+  top: -15%;
+  left: 0;
+  background-color: #e7178970;
+  mix-blend-mode: multiply;
+}
+.Profile-Pic-Container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0;
+  /* background-color: black; */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.Profile-Pic-Img {
+  justify-self: center;
+  margin-top: 10%;
+  height: 100%;
+  max-height: 800px;
+
+  /* transform: translateX(-50%); */
+}
+.Skills {
+  background-image: linear-gradient(to right, #652f8d60, #ffffff00);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: 600px;
+}
+.Skills-Visuals {
+  margin-top: 5%;
+  position: relative;
+  /* background-color: red; */
+  margin-bottom: 5%;
+  display: flex;
+  /* overflow: hidden; */
+}
+.Skills-Words-Container {
+  margin-left: 5%;
+  width: 50%;
+  height: 50%;
+  align-self: center;
+}
+.Skills-Words {
+  padding-right: 20px;
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  justify-self: center;
+  display: inline;
+  background-color: black;
+  color: white;
+  font-family: "charter";
+  font-size: calc((20px + 30 * ((100vw - 320px) / 1600)));
+  box-shadow: 5px 0 0 black;
+}
+.Skills-Words::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  z-index: -1;
+  height: 100%;
+  width: 200%;
+  background-color: black;
+}
+.Bottom-Skills-Container {
+  width: 100%;
+  height: 200%;
+  background-color: #652f8d;
+  display: flex;
+  justify-content: center;
+}
+.Skills-Written {
+  width: 95%;
+  text-align: center;
+  font-family: "caveat";
+  font-size: calc((15px + 20 * ((100vw -320px) / 1600)));
+  /* background-color: #652f8d; */
+  color: white;
+}
+.pie-chart-container {
+  position: relative;
+  height: 50%;
+  width: 50%;
+  overflow: hidden;
+}
+.Pie-chart {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .Bottom-Skills-Container {
+    width: 100%;
+    height: 400%;
+    background-color: #652f8d;
+    display: flex;
+    justify-content: center;
+  }
+  .tagline-area {
+    display: flex;
+    flex-direction: row;
+  }
+  .tagline {
+    position: relative;
+    z-index: 8;
+    margin-left: 3%;
+    margin-top: 0%;
+    align-self: left;
+    transform: translateX(0%);
+    text-decoration: none;
+    width: 40%;
+    text-align: left;
+    color: white;
+    font-family: "abril";
+    font-size: calc((20px + 50 * ((100vw - 320px) / 1600)));
+  }
+  .Squares {
+    position: relative;
+    z-index: 0;
+    width: 50%;
+    margin-left: -40%;
+    margin-bottom: 0%;
+    transform: rotate(-90deg);
+  }
+  .Profile-Pic-Container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0;
+    /* background-color: black; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  .Profile-Pic-Img {
+    justify-self: right;
+    margin-top: -15%;
+    margin-right: -30%;
+    height: 200%;
+    max-height: 800px;
+
+    /* transform: translateX(-50%); */
+  }
+  .down-arrow-container {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    z-index: 5;
+    top: 0;
+    right: 0;
+  }
+  .Down-Arrow {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    width: 60%;
+    max-width: 300px;
+    /* background-color: brown; */
+  }
+  .pie-chart-container {
+    position: relative;
+    margin-left: 5%;
+    height: 35%;
+    width: 35%;
+    overflow: hidden;
+  }
+  .Pie-chart {
+    width: 100%;
+  }
+  .Skills {
+    background-image: linear-gradient(to right, #652f8d60, #ffffff00);
+  }
+  .Skills-Visuals {
+    margin-top: 3%;
+    position: relative;
+    margin-bottom: 0;
+    display: flex;
+    /* overflow: hidden; */
+  }
+  .Skills-Words-Container {
+    margin-left: 5%;
+    height: 25%;
+    align-self: center;
+  }
+  .Skills-Words {
+    padding-right: 20px;
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    justify-self: center;
+    display: inline;
+    background-color: black;
+    color: white;
+    font-family: "charter";
+    font-size: calc((20px + 30 * ((100vw - 320px) / 1600)));
+    box-shadow: 5px 0 0 black;
+  }
+}
